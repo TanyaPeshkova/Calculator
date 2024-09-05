@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Калькулятор</title>
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
 	<div class="calculator">
-		<input type="text" id="input" disabled />
+		<input type="text" id="input" />
 		<div class="buttons">
-			<button onclick="clearDisplay()">C</button>			
+			<button onclick="clearDisplay()" class="clearBtn">C</button>			
 			<button onclick="append('+')">+</button>			
 			<button onclick="append('-')">-</button>
 			<button onclick="append('.')">.</button>			
@@ -25,9 +26,8 @@
 			<button onclick="append('8')">8</button>			
 			<button onclick="append('9')">9</button>			
 			<button onclick="append('0')">0</button>			
-			<button onclick = "calculate()">=</button>			
 		</div>
-
+			<button onclick = "calculate()" id="calcBtn">=</button>			
 	</div>
 <script src="calc.js"></script>
 </body>
